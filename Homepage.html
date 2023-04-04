@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Homepage.css">
+        <title>MY PORTFOLIO</title>
+    </head>
+    <body>
+        <div id="Navigation bar">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a>
+                <a href="Homepage.html">Home</a>
+                <a href="#Contact">Contact</a>
+                <a href="https://github.com/JHawi13">My GitHub</a>
+                <a href="#Projects">Projects</a>
+                <a href="#About">About</a>
+
+              </div>
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Navigation Bar</span>
+              
+              <script>
+              function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+              }
+              
+              function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+              }
+              </script>
+        </div>
+        <div id="Welcome_tab">
+            <div id="Welcome_Text">
+                <p>Welcome to my Portfolio</p>
+                <p style="margin-left: 3cm;">My name is Joel Hawi</p>
+            </div>
+        </div>
+        <div class="slideshow-container" style="background-color: #283D66;">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade" >
+              <h1>My Projects</h1>
+              <div class="numbertext">1 / 3</div>
+              <div style="display: flex;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+              <div id="Website" class="left">
+                <p style="font-size: x-large;">Building the front_end parts of a website has been a growing trend .<br> I have followed this trend and 
+                learnt my fair share of web scripting <br>with the use of HTML5 which is currently the latest web scripting <br> language 
+                .Here is an example of my work on web development</p>
+            </div>
+            <div id="Websitepic" style="margin-left: 1cm;" ><img src="2023-03-13.png" alt="" style="height: 15cm;width: 20cm;"></div>
+            </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div> 
+              <div style="display: flex;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+              <div id="Wokwi" class="left">
+                <P style="font-size: x-large;" >I also have some work on IOT with simulations running on wokwi. <br>
+                Some of these simulations include lighting bulbs,running motors and <br>
+                measurig environmental factors such as heat and humidity</P>
+            </div>
+            <div id="Wokwipic" style="margin-left: 1cm;"><img src="Screenshot 2023-04-03 123849.png" alt="" style="height: 15cm;width: 20cm;"></div>
+            </div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <div style="display: flex;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+              <div id="Robot" class="left">
+                <p style="font-size: x-large;">With the work on Wokwi I also had to learn how to use Arduino boards <br>
+                in order to manifest the work on Wokwi onto robots. With a simple project of <br>
+            running a small vehicle using controllers similar to the ones on Wokwi</p>
+            </div>
+            <div id="Robotpic" style="margin-left: 1cm;"><img src="IMG_0697[16].jpg" alt="" style="height: 15cm;width: 20cm;"></div>
+          </div>
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 5000); // Change image every 5 seconds
+            }
+            </script>
+            <h1>About</h1>
+        <div id="About">
+          
+          <div>
+            <p>I am a programmer with experience in web design,creation of functional algorithms <br>
+            in Elementary languages such as python and C++</p>
+          </div>
+          <div>
+            <img src="IMG_0177[18].jpg" alt="" >
+          </div>
+        </div>
+        <footer> 
+            <h1 id="Contact">Contact</h1>
+            <P>Number : +254 792 746 120</P>
+            <P>Email  : Joherwi@gmail.com</P>
+            <p>Discord :  Hashe7#6440</p>
+        </footer>
+    </body>
+</html>
