@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Alkatra', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+}
+@font-face {
+  font-family: 'Bebas Neue', cursive;
+  src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+}
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -36,6 +44,7 @@
   }
 body{
     background-color: #818181;
+    font-family: 'Bebas Neue', cursive;
 }
 #Welcome_tab{
     background-image: url("https://th.bing.com/th/id/R.2390a8a116988a118f490e2f7e79d9b6?rik=NQuMV5lT4IECBg&pid=ImgRaw&r=0");
@@ -48,6 +57,7 @@ body{
 #Welcome_Text{
     padding-top: 10cm;
     font-size: xx-large;
+    font-family: 'Alkatra', cursive;
 
 }
 #About{
@@ -58,4 +68,54 @@ body{
     width: 5cm;
     border-radius: 3cm;
     margin-left: 1cm;
+}
+#Container{
+  background-color:beige ;
+  border-radius: 2cm;
+  margin-left: 2cm;
+}
+#Container h1{
+  padding-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+  text-decoration: underline;
+}
+#Container div{
+  padding-left: 2cm;
+  padding-right: 2cm;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: x-large;
+}
+#Container h2{
+  margin-bottom: 0%;
+  margin-top: 0%;
+}
+#Container input{
+  width: 8cm;
+  height: 1cm;
+  font-size: large;
+  border-radius: 10px;
+  font-family: sans-serif;
+
+}
+button{
+  text-align: center;
+  width: 8cm;
+  margin-top: 1cm;
+  margin-left: 6cm;
+  margin-bottom: 1cm;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 20px;
+}
+#Message input {
+  padding-bottom: 3cm;
+  padding-right: 8.5cm;
+  border-radius: 15px;
+}
+#ContactStuff{
+  display: flex;
+  font-family: 'Alkatra', cursive;
 }
